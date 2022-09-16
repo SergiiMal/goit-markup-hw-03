@@ -19,6 +19,15 @@
   --primari-bg-color: #f5f5f5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin-top: 0;
+  margin-bottom: 0;
+} 
 body {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -26,7 +35,13 @@ body {
   background-color: var(--primari-bg-color);
   color: var(--title-text-color);
 }
-
+.container{
+  margin:0 auto;
+  width: 1200px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 2px solid tomato;
+}
 /* logo */
 
 .logo-link {
@@ -100,6 +115,8 @@ body {
 /* hero */
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -111,6 +128,8 @@ body {
 /* button */
 
 .btn {
+  margin-bottom: 200px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
