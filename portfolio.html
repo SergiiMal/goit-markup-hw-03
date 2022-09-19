@@ -19,23 +19,24 @@
 
   <body>
     <!--Шапка сайта-->
-    <header class="logo">
-      <a href="#" class="logo-link">
-        Web<span class="logo-span">Studio</span></a>
-      <nav>
-        <ul class="site-nav headers">
-          <li><a class="link" href="index.html">Студія</a></li>
-          <li><a class="link current" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="link" href="#">Контакти</a></li>
+    <header>
+      <div class="container main-nav">
+        <a href="#" class="logo-link">
+          Web<span class="logo-span">Studio</span></a>
+        <nav>
+          <ul class="site-nav">
+            <li class="item"><a class="link" href="index.html">Студія</a></li>
+            <li class="item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
+            <li class="item"><a class="link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="top-address">
+          <li class="item">
+            <a class="link current" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li class="item">
+          <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="top-address headers">
-        <li>
-          <a class="link current" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a>
-        </li>
-        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- filter -->
@@ -43,15 +44,15 @@
         <div class="container">
         <h1 class="visually-hidden">Наші проекти</h1>
         <ul class="filter">
-          <li class="items"><button type="button" class="item current">Усі</button>
+          <li class="items"><button class="item current"  type="button" >Усі</button>
           </li>
-          <li class="items"><button type="button" class="item">Веб-сайти</button>
+          <li class="items"><button class="item" type="button" >Веб-сайти</button>
           </li>
-          <li class="items"><button type="button" class="item">Додатки</button>
+          <li class="items"><button class="item" type="button" >Додатки</button>
           </li>
-          <li class="items"><button type="button" class="item">Дизайн</button>
+          <li class="items"><button class="item" type="button" >Дизайн</button>
           </li>
-          <li class="items"><button type="button" class="item">Маркетинг</button>
+          <li class="items"><button class="item" type="button" >Маркетинг</button>
           </li>
         </ul>
       </div>
@@ -60,14 +61,14 @@
         <ul class="gallery">
           <li class="list">
             <a class="link" href="">
-              <img src="img/leptop.jpg" alt="leptop" width="370" height="294" />
+              <img class="no-gap" src="img/leptop.jpg" alt="leptop" width="370" height="294" />
               <h2 class="title">Технокряк</h2>
               <p class="text">Веб-сайт</p>
             </a>
           </li>
           <li class="list">
             <a class="link" href="">
-              <img src="img/games.jpg" alt="games" width="370" height="294" />
+              <img class="no-gap" src="img/games.jpg" alt="games" width="370" height="294" />
               <h2 class="title">
                 Постер <span lang="en">New Orlean vs Golden Star</span>
               </h2>
@@ -76,7 +77,7 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img
+              <img class="no-gap"
                 src="img/restaurant.jpg"
                 alt="restauran"
                 width="370"
@@ -88,7 +89,7 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img
+              <img class="no-gap"
                 src="img/headphones.jpg"
                 alt="headphones"
                 width="370"
@@ -100,14 +101,14 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img src="img/boxes.jpg" alt="boxes" width="370" height="294" />
+              <img class="no-gap" src="img/boxes.jpg" alt="boxes" width="370" height="294" />
               <h2 class="title">Проєкт <span lang="en">Boxes</span></h2>
               <p class="text">Додаток</p>
             </a>
           </li>
           <li class="list">
             <a class="link" href="">
-              <img
+              <img class="no-gap"
                 src="img/websait.jpg"
                 alt="websait"
                 width="370"
@@ -119,7 +120,7 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img
+              <img class="no-gap"
                 src="img/edition.jpg"
                 alt="edition"
                 width="370"
@@ -133,14 +134,14 @@
           </li>
           <li class="list">
             <a class="link" href="">
-              <img src="img/label.jpg" alt="label" width="370" height="294" />
+              <img class="no-gap" src="img/label.jpg" alt="label" width="370" height="294" />
               <h2 class="title">Проєкт <span lang="en">LAB</span></h2>
               <p class="text">Маркетинг</p>
             </a>
           </li>
           <li class="list">
             <a class="link" href="">
-              <img
+              <img class="no-gap"
                 src="img/business.jpg"
                 alt="business"
                 width="370"
@@ -157,20 +158,23 @@
 
     <!--Підвал-->
     <footer class="address-footer">
-      <a href="#" class="logo-link">
-        Web<span class="logo-span">Studio</span></a>
-      <address>
-        <ul class="address">
-          <li class="item-text">
-            <a class="link" target="_blank" href="https://goo.gl/maps/rWDVabsa2ufEebZV9">м. Київ, пр-т Лесі Українки, 26</a>
-          </li>
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+      <div class="container">
+        <a href="#" class="logo-link">
+          Web<span class="logo-span">Studio</span></a>
+        <address>
+          <ul class="address">
+            <li class="item-text">
+              <a class="link" target="_blank" href="https://goo.gl/maps/rWDVabsa2ufEebZV9">м. Київ, пр-т Лесі Українки,
+                26</a>
+            </li>
+            <li class="item">
+              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+      </div>
       </address>
     </footer>
   </body>
