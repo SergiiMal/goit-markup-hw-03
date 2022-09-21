@@ -29,6 +29,22 @@ p{
   margin-top: 0;
   margin-bottom: 0;
 } 
+
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul,ol{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;  
+}
+
+button{
+  cursor: pointer;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -36,13 +52,22 @@ body {
   background-color: var(--primari-bg-color);
   color: var(--title-text-color);
 }
+
+address{
+  font-style: normal;
+}
+
+/* -----container----- */
+
 .container{
-  margin: 20px auto;
+  margin: 0 auto;
   width: 1200px; 
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
 }
+
+
 /* logo */
 
 .logo-link {
@@ -131,22 +156,24 @@ body {
 
 .top-address .link { 
   padding: 32px 0;
-  text-decoration: none;
-  
+    
   color: var(--primary-text-color);
 }
 
 /* main */
 
 /* hero */
+.hero{
+  text-align: center;
+}
 
 .hero-title {
-  margin-bottom: 30px;
-
+  padding-top: 200px;
+  padding-bottom: 30px;
+ 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  line-height: 1.36;  
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -154,9 +181,7 @@ body {
 /* button */
 
 .btn { 
-  display: block;
-  margin: auto;
-  
+   
   min-width: 216px;   
   margin-bottom: 200px;
   padding: 10px 32px;
@@ -199,18 +224,20 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+    
 }
-
+.feature{
+  /* padding-top: 94px; */
+}
 .feature .list{
   display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  
-  list-style: none;
+  flex-wrap: wrap;   
+  padding-top: 94px;
 }
 
 .feature .item{  
   width: 270px;
+  
 } 
 
 .feature .item:not(:last-child){
@@ -219,6 +246,8 @@ body {
 
 
 .feature .title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -226,24 +255,21 @@ body {
   text-transform: uppercase;
 }
 
-.feature .text {
+.feature .text {  
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+
 }
 
 /* section works */
 
 .section .list{
-  display: flex;
-  padding: 0;
-  list-style: none;
-}
-
-.section .item{
-  margin-bottom: 188px;
+  display: flex;  
+  list-style: none;  
+  padding-bottom: 94px;
 }
 
 .section .item:not(:last-child){
@@ -251,7 +277,8 @@ body {
 }
 
 .section-title {
-margin-bottom: 50px;
+  padding-top: 94px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -261,6 +288,10 @@ margin-bottom: 50px;
 }
 
 /* section-command */
+.command{
+  background: #F5F4FA;;
+}
+
 .command .list,
 .command .link{
   list-style: none;
@@ -269,16 +300,15 @@ margin-bottom: 50px;
 
 .command .list{
   display: flex;
-  padding: 0;
+  padding-bottom: 94px;
 }
-.command .list .item:not(:last-child){
+ .list .item:not(:last-child){
   margin-right: 30px;
 }
-.command .list .item{
-  margin-bottom: 94px;
-}
+
 
 .command .title { 
+  padding-top: 94px;
   margin-bottom: 50px;
 
 
@@ -295,9 +325,6 @@ margin-bottom: 50px;
   border-radius: 0px 0px 4px 4px;
 }
 
-.command .link>img {
-  margin-bottom: 30px;
-}
 
 .command .name {
   font-weight: 500;
