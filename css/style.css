@@ -327,6 +327,8 @@ address{
 
 
 .command .name {
+  padding-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;  
@@ -455,10 +457,15 @@ address{
 .gallery-list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
-  
 
+  
+ 
+  
 }
+
+/* .gallery-list .link{
+  display: inline-block;
+} */
 
 .gallery-list .item{
   margin-right: 30px;
@@ -466,16 +473,18 @@ address{
 
 .gallery-list .item:nth-child(3n){
   margin-right: 0px;
-
 }
+ .gallery-list .item{
+  margin-bottom: 30px;
+ }
 
 .gallery-list .item:nth-last-child(-n+3){
   margin-bottom: 114px;
 }
 
-.gallery-list .title {
-  margin-top: 20px; 
-  margin-bottom: 4px;
+.card-text .title {
+  padding-top: 20px; 
+  padding-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -484,7 +493,7 @@ address{
 
   color: var(--title-text-color);
 }
-.gallery-list .text {
+.card-text .text {
 
   font-size: 16px;
   line-height: 1.88;
