@@ -31,6 +31,7 @@ p {
 }
 
 a {
+
   text-decoration: none;
   color: currentColor;
 }
@@ -230,11 +231,11 @@ address {
   padding-top: 94px;
 }
 
-.feature .item {
+.feature-item {
   width: 270px;
 }
 
-.feature .item:not(:last-child) {
+.feature-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -264,6 +265,7 @@ address {
   padding-bottom: 94px;
 }
 
+
 .section .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -285,7 +287,7 @@ address {
 }
 
 .command .list,
-.command .link {
+.command-link {
   list-style: none;
   text-decoration: none;
 }
@@ -316,7 +318,7 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-.command .name {
+.command-link .name {
   padding-top: 30px;
 
   font-weight: 500;
@@ -330,7 +332,7 @@ address {
   color: var(--title-text-color);
 }
 
-.command .profession {
+.command-link .profession {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
