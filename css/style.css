@@ -167,11 +167,12 @@ address {
 /* hero */
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.hero-title {
-  padding-top: 200px;
-  padding-bottom: 30px;
+.hero-title {  
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -184,7 +185,7 @@ address {
 
 .btn {
   min-width: 216px;
-  margin-bottom: 200px;
+  
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -212,6 +213,10 @@ address {
 
 /* feature */
 
+.feature{
+padding-top: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -228,7 +233,7 @@ address {
 .feature .list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 94px;
+  
 }
 
 .feature-item {
@@ -259,10 +264,15 @@ address {
 
 /* section works */
 
+.section{
+padding-bottom: 94px;
+padding-top: 94px;
+}
+
 .section .list {
   display: flex;
   list-style: none;
-  padding-bottom: 94px;
+ 
 }
 
 
@@ -270,8 +280,7 @@ address {
   margin-right: 30px;
 }
 
-.section-title {
-  padding-top: 94px;
+.section-title {  
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -282,8 +291,12 @@ address {
 }
 
 /* section-command */
+
+
 .command {
   background: #f5f4fa;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .command .list,
@@ -294,14 +307,13 @@ address {
 
 .command .list {
   display: flex;
-  padding-bottom: 94px;
+  
 }
 .command-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.command .title {
-  padding-top: 94px;
+.command .title {  
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -344,32 +356,22 @@ address {
 }
 
 /* address */
-.address {
-  padding: 0;
-}
-
-.address-footer .logo-link {
-  display: block;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-
 .address-footer {
-  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+ .logo-link {
+  display: block;  
+}
+
+.address-footer {  
   background: #2f303a;
 }
 
 .address .item-text,
 .address .item {
   margin-bottom: 9px;
-}
-.address .item:last-child {
-  margin-bottom: 60px;
-}
-
-.address .item-text,
-.address .item {
-  list-style: none;
 }
 
 .address .item-text .link {
@@ -384,9 +386,7 @@ address {
 
   color: rgba(255, 255, 255, 0.6);
 }
-.address .link {
-  text-decoration: none;
-}
+
 
 /* ------Portfolio ------ */
 
