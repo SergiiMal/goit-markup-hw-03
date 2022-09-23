@@ -50,8 +50,7 @@ button {
 body {
   font-family: Roboto, sans-serif;
   font-style: normal;
-
-  background-color: var(--primari-bg-color);
+   
   color: var(--title-text-color);
 }
 
@@ -160,6 +159,9 @@ address {
   padding: 32px 0;
 
   color: var(--primary-text-color);
+}
+.border{
+  border-bottom:  1px solid #ECECEC;
 }
 
 /* main */
@@ -330,8 +332,7 @@ padding-top: 94px;
   border-radius: 0px 0px 4px 4px;
 }
 
-.command-link .name {
-  padding-top: 30px;
+.command-link .name {  
 
   font-weight: 500;
   font-size: 16px;
@@ -348,11 +349,14 @@ padding-top: 94px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  text-align: center;
-
-  margin-bottom: 30px;
+  text-align: center;  
 
   color: var(--primary-text-color);
+}
+.command-card{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
 }
 
 /* address */
@@ -364,13 +368,17 @@ padding-top: 94px;
  .logo-link {
   display: block;  
 }
+.address-footer .logo-link{
+  padding:0 ;
+  margin-bottom: 20px;
+}
 
 .address-footer {  
   background: #2f303a;
 }
 
 .address .item-text,
-.address .item {
+.address .item:not(:last-child){
   margin-bottom: 9px;
 }
 
@@ -389,11 +397,6 @@ padding-top: 94px;
 
 
 /* ------Portfolio ------ */
-
-.top-line {
-  border: 1px solid #ECECEC;
-  background: #FFFFFF;
-}
 
 /* filter */
 
@@ -469,12 +472,10 @@ padding-top: 94px;
 
 
 .card-text {
-  padding: 0 24px 20px 24px;
+  padding: 20px 24px 20px 24px;
 }
 
 .card-text .title {
-  padding-top: 20px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

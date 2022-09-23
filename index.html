@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <header>
+    <header class="border">
       <div class="container main-nav">
         <a href="#" class="logo-link">
           Web<span class="logo-span">Studio</span></a
@@ -46,13 +46,9 @@
             <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </div>
+      </div>      
     </header>
-    <main>
-      <!-- Верхня лінія -->
-      <div class="container">
-        <div class="top-line"></div>
-      </div>
+    <main>   
       <!--Герой-->
       <section class="hero">
         <div class="container">
@@ -131,17 +127,21 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list">
             <li class="command-item">
-              <a class="command-link" href="#">
+              <a class="command-link" href="#">                
                 <img src="./img/photo-igor.jpg" alt="photo-igor" width="270" />
+                <div class="command-card">
                 <h3 class="name">Ігор Дем'яненко</h3>
                 <p class="profession">Product Designer</p>
+                </div>
               </a>
             </li>
             <li class="command-item">
               <a class="command-link" href="#">
                 <img src="./img/photo-olga.jpg" alt="photo-olga" width="270" />
+                <div class="command-card">
                 <h3 class="name">Ольга Рєпіна</h3>
                 <p class="profession">Frontend Developer</p>
+                </div>
               </a>
             </li>
             <li class="command-item">
@@ -151,8 +151,10 @@
                   alt="photo-mukola"
                   width="270"
                 />
+                <div class="command-card">
                 <h3 class="name">Микола Тарасов</h3>
                 <p class="profession">Marketing</p>
+                </div>
               </a>
             </li>
             <li class="command-item">
@@ -162,8 +164,10 @@
                   alt="photo-mihailo"
                   width="270"
                 />
+                <div class="command-card">
                 <h3 class="name">Михайло Єрмаков</h3>
                 <p class="profession">UI Designer</p>
+                </div>
               </a>
             </li>
           </ul>
